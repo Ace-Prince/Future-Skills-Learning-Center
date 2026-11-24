@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for courses at Future Skills Learning Center.">
+  <title>Register | Future Skills Learning Center</title>
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+  <!-- Website Header -->
+  <header>
+    <img src="images/logo.png" alt="Future Skills Learning Center logo" width="100">
+    <h1>Future Skills Learning Center</h1>
+    <p>Learn. Build. Create. Grow.</p>
+    <nav aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="registration">
+      <h2>Course Registration Form</h2>
+      <p>Complete the form below to apply for an upcoming program.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <p>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" minlength="3" maxlength="100" required>
+          </p>
+
+          <p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="phone">Telephone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" min="1950-01-01" max="2015-12-31" required>
+          </p>
+
+          <p>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Program &amp; Study Preferences</legend>
+
+          <p>
+            <label for="course">Select Course</label>
+            <select id="course" name="course" required>
+              <option value="">Choose a course</option>
+              <option value="web-development">Web Development</option>
+              <option value="computer-literacy">Computer Literacy</option>
+              <option value="graphic-design">Graphic Design</option>
+              <option value="english">English Language</option>
+              <option value="entrepreneurship">Entrepreneurship</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Preferred Study Mode</legend>
+
+            <input type="radio" id="online" name="studyMode" value="online" required>
+            <label for="online">Online</label>
+
+            <input type="radio" id="physical" name="studyMode" value="physical">
+            <label for="physical">In Person</label>
+
+            <input type="radio" id="hybrid" name="studyMode" value="hybrid">
+            <label for="hybrid">Hybrid</label>
+          </fieldset>
+
+          <p>
+            <label for="educationLevel">Education Level</label>
+            <select id="educationLevel" name="educationLevel" required>
+              <option value="">Select education level</option>
+              <option value="secondary">Secondary School</option>
+              <option value="vocational">TVET / Vocational</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="startDate">Preferred Start Date</label>
+            <input type="date" id="startDate" name="startDate" min="2026-11-01" max="2027-12-31" required>
+          </p>
+
+          <p>
+            <label for="motivation">Why do you want to join?</label>
+            <textarea id="motivation" name="motivation" rows="6" cols="50" minlength="20" maxlength="800" required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmation</legend>
+
+          <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I confirm that the information provided is correct and agree to the terms.</label>
+          </p>
+
+          <p>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Website Footer -->
+  <footer>
+    <p>&copy; 2026 Future Skills Learning Center. All rights reserved.</p>
+    <p><a href="contact.html">Contact Us</a></p>
+  </footer>
+</body>
+</html>
